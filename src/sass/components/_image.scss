@@ -1,0 +1,89 @@
+@use "../mixins/grey-hover" as *;
+
+.placeholder{
+  width: min(70vw, 538px);
+  height: min(70vw, 538px);
+  padding-bottom: 3vh;
+
+  &:hover{
+    //opacity: .3;
+  }
+
+  background: no-repeat center/cover url("../../assets/placeholder.jpg");
+
+  @media (min-width: 769px) and (max-width: 1334px){
+    width: 40vw;
+    height: 40vw;
+    margin-left: 35vw;
+  }
+
+  @media (min-width: 1335px) {
+    width: 35vw;
+    height: 35vw;
+
+    & p { 
+      width: min(35vw, 350px);
+      height: min(35vw, 350px);
+    }
+  }
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &:hover{
+   // background-color: hsla(0, 0%, 0%, .7);
+    cursor: pointer; 
+  }
+}
+
+.mary{
+  @include bckg-hover(mary);
+}
+.papa-angelo{
+  @include bckg-hover(papa-angelo);
+}
+.stefan{
+  @include bckg-hover(stefan);
+}
+.ligia{
+  @include bckg-hover(ligia);
+}
+.n-girasol{
+  @include bckg-hover(n-girasol);
+}
+.viejita{
+  @include bckg-hover(viejita);
+}
+.sra{
+  @include bckg-hover(sra);
+}
+.n-flores-pelo{
+  @include bckg-hover(n-flores-pelo);
+}
+.salto-angel{
+  @include bckg-hover(salto-angel);
+}
+.n-turbante{
+  @include bckg-hover(n-turbante);
+}
+.tigre{
+  @include bckg-hover(tigre);
+}
+.bebe{
+  @include bckg-hover(bebe);
+}
+.afgana{
+  @include bckg-hover(afgana);
+}
+.n-afro{
+  @include bckg-hover(n-afro);
+}
+.lobo{
+  @include bckg-hover(lobo);
+}
+.jirafas-solas{
+  @include bckg-hover(jirafas-solas);
+}

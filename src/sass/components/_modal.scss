@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+
+.modal{
+  border: none;
+  background: none;
+  z-index: 99;
+  width: 46vw;
+  height: 100vw;
+  margin-left: 30vw;
+  margin-top: 3vh;
+
+  @media (max-width: 769px){
+    width: 100vw;
+    height: 100vw;
+    margin-left: 3vw;
+    margin-top: 20vh;
+  }
+
+  &::backdrop{
+    background: rgba(51, 51, 51, 0.8);
+    /* max-width: 50ch; */
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: white;
+  }
+
+  img{
+    width: 85%;
+  }
+
+  & span {
+    font-family: inherit;
+    
+    &:first-of-type{
+      font-weight: 700;
+      font-size: 3rem;
+      text-align: end;
+      align-self: flex-end;
+      padding-right: 2rem;
+      padding-top: .5rem;
+
+      &:hover{
+        cursor: pointer;
+      }      
+    }
+  }
+}

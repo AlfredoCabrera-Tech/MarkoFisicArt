@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+
+nav {
+  grid-area: nav;
+  position: fixed;
+  width: 100%;
+
+  & .menu-btn {
+    padding-top: 1vh;
+    padding-left: 4vw;
+    font-size: 2.5rem;
+    width: min(10vw, 50px);
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $primary-gray;
+  }
+}

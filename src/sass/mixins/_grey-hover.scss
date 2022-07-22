@@ -1,0 +1,12 @@
+@mixin bckg-hover($name) {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/#{$name}.jpg");
+  
+  &:hover{
+    background-image: 
+    linear-gradient(to right, hsla(0, 0%, 0%, .5), hsla(0, 0%, 0%, .5)),
+    url("../../assets/#{$name}.jpg");
+  }
+}

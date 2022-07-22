@@ -1,0 +1,53 @@
+@use "./variables" as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* 
+  BREAKPOINT IS LARGER THAN 768px 
+  538px is the largest allowed for images
+*/
+
+html {
+  font-size: 1.15vw;
+  color: $secondary-gray;
+
+  @media (max-width: 1335px){
+    font-size: max(1.05vw, .8rem);
+  }
+  
+}
+
+body {
+  font-family: 'Lora', serif;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  //grid-template-rows: 2vh auto;
+  //grid-template-columns: 50vw auto;
+  grid-template-areas: 
+  "nav nav"
+  "side main"
+  "side content";
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

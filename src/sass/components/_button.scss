@@ -1,0 +1,34 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  width: min(15rem, 30vw);
+  padding: .5rem .5rem;
+  border-radius: 5px;
+  border: 1.5px solid $primary-gray;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: white;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $primary-gray;
+    color: white;
+    transition: all .3s linear;
+  }
+}
+
+.top-btn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 98;
+  width: 60px;
+  font-size: 2rem;
+}
+
+.btn--video {
+  width: 2rem;
+  text-align: center;
+}

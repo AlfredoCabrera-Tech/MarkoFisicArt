@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as *;
+
+.contact{
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+
+  @media(min-width: 769px){
+    margin-left: 12vw;
+  }
+  @media(min-width: 900px){
+    flex-direction: row;
+    align-items: start;
+
+    /* & button {
+      position: absolute;
+      top: 150%;
+    } */
+  }
+
+  &__content{
+    h1{
+
+      @media (max-width: 769px) {
+        text-align: center;
+        margin-left: -10vw;
+      }
+      @media (min-width: 769px) and (max-width: 900px){
+        margin-left: 0vw;
+      }
+      
+      @media (min-width: 900px) and (max-width: 1334px) {
+        text-align: center;
+        justify-content: start;
+        padding-left: 0vw;
+      }
+    }
+  }
+
+  & .inputs, & .message{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .placeholder {
+    margin-left: 5vw;
+    
+    @media (max-width: 900px){
+      display: none;
+    }
+    @media (min-width: 900px) and (max-width: 1334px){
+      margin-left: 3vw;
+    }
+    @media (min-width: 1500px){
+      width: 35vw;
+      height: 30vw;
+    }
+  }
+
+  & .img__contact{
+    background: no-repeat center/cover url("../../assets/contacto.jpg");
+  }
+
+  & .socials{
+    font-size: 2.6vw;
+    margin-top: 2vw;
+    margin-left: 15vw;
+  }
+}
