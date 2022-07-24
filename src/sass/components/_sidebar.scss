@@ -3,6 +3,7 @@
 .sidebar {
 
   //outline: $outline;
+  z-index: 99;
 
   & .close-btn{
     position: absolute;

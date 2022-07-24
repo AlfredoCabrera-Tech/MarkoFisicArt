@@ -96,7 +96,10 @@
         position: relative;
 
         @media (max-width: 900px){
-          display: none;
+          //display: none; 
+          width: 55vw;
+          height: 30vw;
+          align-self: center;
         } 
         @media (min-width: 900px){
           width: 20vw;
@@ -110,7 +113,10 @@
       }
     
       @media (max-width: 900px){
-        display: none;
+        //display: none;
+        width: 50vw;
+        height: 70vw;
+        align-self: center;
       } 
       @media (min-width: 900px){
         width: 20vw;
