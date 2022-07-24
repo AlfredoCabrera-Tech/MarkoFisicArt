@@ -8,7 +8,7 @@
     justify-content: start;
     align-items: flex-start;
 
-    width: 80vw;
+    width: 75vw;
     
     gap: 0;
     
@@ -20,8 +20,11 @@
       }
     }
     
+    @media (max-width: 769px){
+      margin-left: 5vw;
+    }
     @media (min-width: 769px){
-      margin-left: 40vw;
+      margin-left: 25vw;
     }
 
     @media (min-width: 900px) {
@@ -32,10 +35,6 @@
       margin-left: 25vw; 
     }
     
-    @media (max-width: 769px){
-      margin-left: 5vw;
-    }
-    
     & .img__about{
       background: no-repeat center/cover url("https://drive.google.com/uc?id=18edl6Iz5oUNX5pskJ7WsDbYwbdD5_-k_");
     }
@@ -44,8 +43,8 @@
   &__placeholder {
     @media (max-width: 1334px){
       margin-left: 0;
-      width: 40vw;
-      height: 40vw;
+      width: 50vw;
+      height: 50vw;
     }
     
     @media (min-width: 900px){
@@ -64,7 +63,7 @@
   &__text {
   
     width: 60%;
-    @media (max-width: 769px){
+    @media (max-width: 900px){
       width: 90%;
     }
 
