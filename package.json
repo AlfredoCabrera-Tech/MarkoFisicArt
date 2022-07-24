@@ -15,12 +15,12 @@
     "watch:js": "onchange \"src/js/**/*\" -- npm run copy:js",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch": "npm-run-all --parallel watch:*",
-    "serve": "browser-sync start --server public --files public --port $PORT",
+    "serve": "browser-sync start --server public --no-notify --files public --port $PORT",
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:html build:*",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.4.2",
     "copyfiles": "^2.4.1",
     "cssnano": "^5.0.17",
