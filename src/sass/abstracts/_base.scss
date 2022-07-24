@@ -18,11 +18,12 @@ html {
     font-size: max(1.05vw, .8rem);
   }
   
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Lora', serif;
-  overflow-x: hidden;
 }
 
 main {
