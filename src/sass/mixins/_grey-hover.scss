@@ -1,12 +1,11 @@
-@mixin bckg-hover($name) {
+@mixin bckg-hover($url) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://drive.google.com/uc?id=#{$name}");
+  background-image: url($url);
   
   &:hover{
     background-image: 
-    linear-gradient(to right, hsla(0, 0%, 0%, .5), hsla(0, 0%, 0%, .5)),
-    url("https://drive.google.com/uc?id=#{$name}");
+    linear-gradient(to right, hsla(0, 0%, 0%, .5), hsla(0, 0%, 0%, .5)), url($url);
   }
 }
