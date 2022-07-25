@@ -32,12 +32,12 @@
       flex-direction: row;
       align-items: start;
       justify-content: start;
-      gap: 0;
-      margin-left: 25vw; 
+      gap: 5vh;
+      margin-left: 29vw; 
     }
     
     & .img__about{
-      background: no-repeat center/cover url("https://drive.google.com/uc?id=18edl6Iz5oUNX5pskJ7WsDbYwbdD5_-k_");
+      background: no-repeat center/cover url("https://scontent.fccs3-1.fna.fbcdn.net/v/t39.30808-6/245200397_1163125397429633_6661019049181218646_n.jpg?stp=dst-jpg_p600x600&_nc_cat=111&ccb=1-7&_nc_sid=a26aad&_nc_ohc=5pbbRrPiNdgAX_SLedg&_nc_ht=scontent.fccs3-1.fna&oh=00_AT8SxU3ifyd2424375OGZ8o9QIyQIb7Ls7rrWiAViM0wKQ&oe=62E2A8AC");
     }
   }
   
@@ -79,7 +79,7 @@
     
     @media (min-width: 900px){
       
-      width: 35vw;
+      width: 40vw;
 
       & p:first-of-type{
         padding-top: 0;
